@@ -1,0 +1,257 @@
+.sticky-filter {
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+    /* background: white; */
+    /* Optional: to avoid content behind */
+
+    /* background-color: rebeccapurple; */
+}
+
+
+.event_filter_wrapper {
+    display: flex;
+    height: 82px;
+
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+
+.events_filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 15px;
+    background-color: #f4f8facc;
+    border-radius: 60px;
+    border: 1px solid rgba(30, 30, 30, 0.05);
+
+    @media screen and (max-width: 768px) {
+        padding: 5px;
+    }
+
+}
+
+.arrow_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #37848c;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.arrow_btn.disabled {
+    display: none;
+
+
+    /* opacity: 0.3;
+    pointer-events: none; */
+}
+
+
+
+.list_events_scroll {
+    overflow-x: auto;
+    max-width: 750px;
+    scroll-behavior: smooth;
+    flex-shrink: 1;
+
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+
+    @media screen and (max-width: 768px) {
+        max-width: 150px;
+    }
+}
+
+.list_events_scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.list_events {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    padding: 5px;
+}
+
+.list_events button {
+    border-radius: 60px;
+    border: 1px solid rgba(30, 30, 30, 0.05);
+    background: transparent;
+    padding: 18px 25px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: clamp(10px, 4vw, 16px);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.list_events button.active {
+    background-color: #37848c;
+    color: white;
+}
+
+.gallery_btn {
+    display: grid;
+    place-items: center;
+
+
+    background-color: #FFFFFF;
+    width: 82px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.gallery_btn div {
+    background-color: #37848C;
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.gallery_img_count {
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    border: 5px solid #FFFFFF;
+    background-color: #DC6D80;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #FFFFFF;
+
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/* .event_filter_wrapper {
+    display: flex;
+    height: 82px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.events_filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F8FACC;
+    border-radius: 60px;
+    border: 1px solid #1E1E1E0D;
+    padding: 13px 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.list_events {
+    display: flex;
+    gap: 20px;
+}
+
+.list_events button {
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #1E1E1E0D;
+    padding: 18px 25px;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list_events button.active {
+    color: #FFFFFF;
+    background-color: #37848C;
+}
+
+.arraw_btn {
+    width: 56px;
+    height: 56px;
+    background-color: #37848C;
+    border-radius: 999px;
+
+    display: grid;
+    place-items: center;
+}
+
+.gallery_btn {
+    display: grid;
+    place-items: center;
+
+
+    background-color: #FFFFFF;
+    width: 82px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.gallery_btn div {
+    background-color: #37848C;
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.gallery_img_count {
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    border: 5px solid #FFFFFF;
+    background-color: #DC6D80;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #FFFFFF;
+
+    top: 0;
+    right: 0;
+} */

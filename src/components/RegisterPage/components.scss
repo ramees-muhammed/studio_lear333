@@ -1,0 +1,130 @@
+.primary_btn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: none;
+  width: 100%;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  transition: background-color .3s ease;
+
+  cursor: pointer;
+
+}
+
+.primary_btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+
+  .input_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      border: 0.5px solid #1e1e1e40;
+      outline: none;
+      font-weight: 400;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 30px;
+    }
+
+    .eye_icon {
+      position: absolute;
+      right: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      user-select: none;
+    }
+  }
+}
+
+.input_field {
+  input {
+    border: 0.5px solid #dd1e1e;
+  }
+}
+
+// OTPField.tsx
+
+.otp_field {
+  width: 69px;
+  height: 56px;
+
+  border: 0.5px solid #1e1e1e40;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  // padding: 15px 50px 15px 15px;
+  border-radius: 10px;
+
+  padding: 0;
+
+  text-align: center;
+}
+
+
+// .input_field {
+//   display: flex;
+//   flex-direction: column;
+
+//   label {
+//     margin-bottom: 15px;
+//   }
+
+//   input {
+//     border: 0.5px solid #1E1E1E40;
+//     outline: none;
+
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 100%;
+//     letter-spacing: 0%;
+//     padding: 15px;
+//     border-radius: 30px;
+//   }
+// }
+
+
+// MobileNumberField.tsx
+
+.mobile_number_field {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  select,
+  input {
+    width: 100%;
+    border: 0.5px solid #1e1e1e40;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  select {
+    width: 120px;
+    padding: 15px;
+  }
+
+  input {
+    flex: 1;
+  }
+}

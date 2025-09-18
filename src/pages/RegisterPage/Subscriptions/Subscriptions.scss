@@ -1,0 +1,107 @@
+.subscriptions_page {
+    padding: 50px 71px;
+    // height: 100dvh;
+    // background-color: red;
+
+    .subscriptions_page_title {
+        margin-bottom: 150px;
+
+        h1 {
+            font-weight: 500;
+            font-size: 55px;
+            line-height: 70px;
+            letter-spacing: 0%;
+            color: #1E1E1ECC;
+
+            span {
+                font-weight: 500;
+                font-size: 82px;
+                line-height: 70px;
+                letter-spacing: 0%;
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .subscriptions {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+
+        // background-color: rebeccapurple;
+
+
+    }
+
+    .subscription {
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        // .subscription_contents:nth-child(odd) {
+        //     align-items: end;
+        // }
+
+        .subscription_contents {
+            background-color: #37848C1A;
+            display: flex;
+            gap: 100px;
+            padding: 25px;
+            border-radius: 28px;
+
+            .subscription_type {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 30px;
+                letter-spacing: 0%;
+                color: #1E1E1E;
+
+                span {
+                    font-size: 22px;
+                    color: #1E1E1ECC;
+                }
+            }
+
+            .subscription_price {
+                font-weight: 600;
+                font-size: 55px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #1E1E1ECC;
+
+                span {
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+            }
+
+            .subscription_points {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                margin-top: 50px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .love_icon_circle {
+        width: 61px;
+        height: 61px;
+        background-color: var(--primary-color);
+
+        display: grid;
+        place-items: center;
+        border-radius: 100%;
+    }
+}

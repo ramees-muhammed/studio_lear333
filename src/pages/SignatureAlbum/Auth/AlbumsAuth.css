@@ -1,0 +1,187 @@
+.auth_page {
+    background-image: url("/ImageSelection/images/auth_bg.png");
+
+    height: 100dvh;
+
+    padding: 0px 118px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+
+
+    @media screen and (max-width: 768px) {
+        /* background-image: url("/images/auth_banner.jpg"); */
+        background-image:
+            /* linear-gradient(0deg, #f6f4f400, #f6f4f400), */
+            linear-gradient(0deg, rgba(55, 132, 140, 0.2), rgba(55, 132, 140, 0.2)),
+            linear-gradient(180deg, rgba(55, 132, 140, 0) 52.54%, #37848C 77.27%),
+            url("/ImageSelection/images/auth_banner.jpg");
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 0px;
+    }
+}
+
+.auth_page_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        background-image: url("/images/auth_bg.png");
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+
+        padding: 25px 0px;
+    }
+}
+
+.auth_title h1 {
+    font-weight: 400;
+    font-size: clamp(18px, 4vw, 42px);
+    line-height: clamp(20px, 4vw, 40px);
+    letter-spacing: 7%;
+    color: #1E1E1ECC;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 54px;
+    }
+}
+
+.auth_title h1 span {
+    font-weight: 400;
+    font-size: clamp(18px, 4vw, 32px);
+    line-height: clamp(20px, 4vw, 40px);
+    letter-spacing: 7%;
+}
+
+.auth_banner {
+    position: relative;
+    height: 496px;
+    background-color: red;
+
+
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    }
+}
+
+.auth_banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.auth_client_name {
+    position: absolute;
+    bottom: 0;
+
+    border: 1px solid #CCC5BD;
+    background-color: #FFFFFF80;
+
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    padding: 10px 0;
+
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.auth_client_name_mobile {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: white;
+}
+
+.auth_client_email {
+    font-weight: 400;
+    font-size: clamp(10px, 4vw, 18px);
+    line-height: 20px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #1E1E1ECC;
+
+}
+
+
+.enter_pin_fields p {
+    font-weight: 400;
+    font-size: clamp(12px, 4vw, 18px);
+    line-height: 20px;
+    letter-spacing: 7%;
+    text-align: center;
+}
+
+.pin_input_group {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.pin_input {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #1E1E1ECC;
+
+
+    @media screen and (max-width: 768px) {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+.auth_page button {
+    width: 100%;
+    background-color: #37848C;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 7%;
+    cursor: pointer;
+
+    font-family: "Cinzel", serif;
+    margin-top: 25px;
+}

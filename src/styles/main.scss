@@ -1,0 +1,47 @@
+// @import "tailwindcss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #37848C;
+    --primary-color-dark: #17494F;
+    --font: "Urbanist", sans-serif;
+
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: #1E1E1E;
+}
+
+label,
+input,
+textarea,
+button {
+    font-family: var(--font) !important;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3d63dd;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--window-color);
+    color: var(--font-color);
+
+    user-select: none;
+    /* pointer-events: none; */
+}

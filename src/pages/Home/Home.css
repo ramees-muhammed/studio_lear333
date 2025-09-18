@@ -1,0 +1,64 @@
+/* Common container with responsive padding */
+.wrapper-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  /* small devices */
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+  }
+
+  /* tablets */
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+
+  /* desktops */
+  @media (min-width: 1024px) {
+    padding: 3rem;
+  }
+
+  /* large screens */
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+
+  }
+}
+
+.home-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 33px;
+}
+
+.hero-banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hero-banner-container h1 {
+  font-family: var(--font);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: clamp(31px, 4vw, 64px);
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    line-height: 100%;
+  }
+}
+
+.hero-banner-contents {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+}

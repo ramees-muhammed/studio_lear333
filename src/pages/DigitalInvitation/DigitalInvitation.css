@@ -1,0 +1,43 @@
+.digital_invitation {
+    height: 100%;
+
+    .new_invitation_btn {
+        background-color: #37848C;
+        border-radius: 60px;
+        padding: 10px 20px;
+        color: #FFFFFF;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        cursor: pointer;
+    }
+
+    .invitations_title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .invitation_list {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 13px 0;
+
+        overflow-y: auto;
+    }
+
+    .invitation {
+        width: calc(33.33% - (24px - 6px));
+        /* background-color: #37848C; */
+        height: 300px;
+
+        border: 1px solid #0000001A;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
