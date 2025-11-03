@@ -178,6 +178,9 @@ const Features = () => {
         <div className="bg_img_3">
           <img src="/home/section-background-3.svg" alt="" />
         </div>
+        <div className="bg_img_4 d-lg-none">
+          <img src="/home/section-background-4.svg" alt="" />
+        </div>
       </div>
 
       <div className="bg_lines">
